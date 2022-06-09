@@ -47,9 +47,10 @@ def main():
     val_dataloader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False, **kwargs)
 
     net = MobileNet()
+    loss_func = nn.BCEWithLogitsLoss()
     if args.cuda:
         net = net.cuda()
-    loss_func = nn.BCEWithLogitsLoss()
+        loss_func = loss_func.cuda()
 
     if args.optim == 'sgd':
         optimizer = optim.SGD(net.parameters(), lr=1e-1, momentum=0.9, weight_decay=1e-4)
