@@ -2,7 +2,8 @@
 pytorch:1.10.0
 
 # 数据集准备
-下载猫狗分类数据集，放在dogvscat文件夹下
+下载猫狗分类数据集，放在dogvscat文件夹下。
+
 下载链接：https://www.kaggle.com/competitions/dogs-vs-cats-redux-kernels-edition/data?select=sample_submission.csv
 
 # 划分训练集验证集
