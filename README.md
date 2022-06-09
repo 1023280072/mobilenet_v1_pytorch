@@ -16,6 +16,11 @@ python split_train_val.py
 python train.py
 ```
 
+# 训练过程可视化
+```bash
+tensorboard --logdir='work_dir/runs'
+```
+
 # 产生提交结果
 ```bash
 python generate_test_output.py
@@ -26,3 +31,8 @@ python generate_test_output.py
 ```bash
 python visual_result.py
 ```
+
+# 训练过程
+![image](result_images/train_loss.png)
+![image](result_images/val_accuracy.png)
+![image](result_images/val_loss.png)
